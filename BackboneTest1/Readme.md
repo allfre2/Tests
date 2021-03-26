@@ -1,7 +1,7 @@
 # Backbone Test 1
 Ejercicio con Backbonejs consumiendo [Heroku Simple Api (Comments API)](http://simple-api.herokuapp.com/api/v1/comments)
 
-### Dependencias
+### Dependencies
   - [Backbonejs](https://backbonejs.org/)
   - [Backbone.stickit](https://www.npmjs.com/package/backbone.stickit)
   - [underscorejs](https://underscorejs.org/)
@@ -21,3 +21,9 @@ gulp
 ```
 
 open index.html in browser
+
+### ScreenShots
+
+![Screenshot](screenshots/List.png)
+
+![Screenshot](screenshots/Edit.png)
