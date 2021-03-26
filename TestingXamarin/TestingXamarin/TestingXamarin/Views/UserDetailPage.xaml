@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestingXamarin.Views.UserDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <Image Source="{Binding User.PictureUrl}" />
+        <Label Text="Username:" FontSize="Medium" />
+        <Label Text="{Binding User.Username}" d:Text="Username" FontSize="Small"/>
+        <Label Text="Email:" FontSize="Medium" />
+        <Label Text="{Binding User.Email}" d:Text="User's Email" FontSize="Small"/>
+        <Label Text="Address:" FontSize="Medium" />
+        <Label Text="{Binding User.FullAddress}" d:Text="User's Address" FontSize="Small"/>
+        <Label Text="Phone:" FontSize="Medium" />
+        <Label Text="{Binding User.Phone}" d:Text="Phone" FontSize="Small"/>
+        <Label Text="Cell:" FontSize="Medium" />
+        <Label Text="{Binding User.Cell}" d:Text="CellPhone" FontSize="Small"/>
+    </StackLayout>
+    
+</ContentPage>

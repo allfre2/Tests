@@ -1,0 +1,12 @@
+*
+
+!.gitignore
+!README.md
+!Entrevista.sln
+
+!Entrevista/
+!Entrevista/*
+
+# Ignore
+Web/ClientApp/node_modules
+Web/ClientApp/build

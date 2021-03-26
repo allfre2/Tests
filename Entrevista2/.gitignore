@@ -1,0 +1,22 @@
+*
+
+!.gitignore
+!README.md
+
+!Entrevista2.sln
+
+!Data/
+!Data/*
+!Data/Context/**
+!Data/Model/**
+!Data/Interfaces/**
+
+!Entrevista2/
+!Entrevista2/*
+!Entrevista2/ClientApp/**
+!Entrevista2/Controllers/**
+!Entrevista2/Pages/**
+
+# Ignore
+Entrevista2/ClientApp/node_modules
+Entrevista2/ClientApp/build

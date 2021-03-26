@@ -1,0 +1,23 @@
+*
+#############################
+# BACKBONE TEST 1 whitelist #
+#############################
+
+!.gitignore
+!README.md
+!index.html
+!config.build.js
+!config.js
+!gulpfile.js
+!package.json
+!package-lock.json
+
+
+!app/
+!app/*
+!app/js/**
+!app/public/**
+
+!build
+
+# Ignore

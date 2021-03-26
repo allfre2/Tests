@@ -1,0 +1,27 @@
+*
+#######################
+# OnapiJurisprudencia #
+#######################
+
+!.gitignore
+!README.md
+!Library.png
+!Add.png
+
+!RestApiExercise.sln
+
+!Data/
+!Data/*
+!Data/Context/**
+!Data/Model/**
+!Data/Interfaces/**
+
+!Web/
+!Web/*
+!Web/ClientApp/**
+!Web/Controllers/**
+!Web/Pages/**
+
+# Ignore
+Web/ClientApp/node_modules
+Web/ClientApp/build

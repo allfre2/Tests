@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interfaz para comentarios</title>
+	<link rel="stylesheet" href="build/css/main.css" />
+</head>
+<body>
+
+<div class="navbar-fixed">
+<nav>
+  <div class="nav-wrapper green lighten-2">
+    <a class="brand-logo center" id="nav-title">Comentarios</a>
+  </div>
+</nav>
+</div>
+
+<br />
+
+<div class="container" id="content"></div>
+
+<script type="text/template" id="comment-template">
+    <td><%= name %></td>
+    <td><%= email %></td>
+    <td><%= website %></td>
+    <td>
+      <a class="edit-comment-btn col s4 waves-effect waves-light btn green darken-2" 
+         title="<%= content %>" 
+         href="#/edit/<%= id %>"
+         >Editar
+      </a>
+    </td>
+</script>
+
+<script type="text/template" id="list-template">
+
+</script>
+
+<script type="text/template" id="comment-edit-template">
+	<div class="row">
+	<form class="col s12">
+		<div class="row">
+		<div class="input-field col s6">
+          <input id="name" type="text" class="validate" maxlength="100" />
+          <label for="name">Nombre: </label>
+        </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="email" type="email" class="validate" />
+            <label for="email">Correo Electrónico: </label>
+          </div>
+        </div>
+		<div class="input-field col s6">
+          <input id="website" type="text" class="validate" maxlength="100" />
+          <label for="name">Página Web: </label>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="content" style="height: 130px;"></textarea>
+            <label for="content">Comentario: </label>
+          </div>
+        </div>
+        <div class="row">
+        	<div class="input-field col s12">
+        		<a class="save-comment-btn col s4 waves-effect waves-light btn blue darken-2">Guardar</a>
+        		<a class="col s4 waves-effect waves-light btn grey darken-2" href="#/list">Regresar</a>
+        	</div>
+        </div>
+	</form>
+	<div>	
+</script>
+
+<script type="text/template" id="comment-create-template">
+	<div class="row">
+	<form class="col s12">
+		<div class="row">
+		<div class="input-field col s6">
+          <input id="name" type="text" class="validate" maxlength="100" />
+          <label for="name">Nombre: </label>
+        </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="email" type="email" class="validate" />
+            <label for="email">Correo Electrónico: </label>
+          </div>
+        </div>
+		<div class="input-field col s6">
+          <input id="website" type="text" class="validate" maxlength="100" />
+          <label for="name">Página Web: </label>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="content" style="height: 130px;"></textarea>
+            <label for="content">Comentario: </label>
+          </div>
+        </div>
+        <div class="row">
+        	<div class="input-field col s12">
+        		<a class="save-comment-btn col s4 waves-effect waves-light btn blue darken-2">Guardar</a>
+        		<a class="col s4 waves-effect waves-light btn grey darken-2" href="#/list">Regresar</a>
+        	</div>
+        </div>
+	</form>
+	<div>	
+</script>
+
+<script src="build/js/jquery.min.js"></script>
+	<script src="build/js/underscore-min.js"></script>
+  <script src="build/js/backbone-min.js"></script>
+  <script src="build/js/backbone.stickit.js"></script>
+  <script src="build/js/backbone-validation-min.js"></script>
+	<script src="build/js/materialize.min.js"></script>
+	<script src="build/js/main.js"></script>
+</body>
+</html>
